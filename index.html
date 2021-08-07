@@ -2,104 +2,198 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    
     <div class="nav-container">
         <header>
-            <a href="index.html" class="logo">Lorem</a>
+            <a href="index.html" class="logo">Home</a>
+
             <nav>
                 <ul>
-                    <li><a href = "a"> My work</a></li>
-                    <li><a href = "a"> My work</a></li>
-                    <li><a href = "a"> My work</a></li>
+                    <li><a href="#first">Featured Project</a></li>
+                    <li><a href="#second">My skills</a></li>
+                    <li><a href="#third">Other Projects</a></li>
                 </ul>
             </nav>
         </header>
         <div class="social-header">
             <ul>
-                <li><a href="a"><img src = "website-portfolio/img/apple.svg" alt = "github" ></a></li>
-                <li><a href="a"><img src = "website-portfolio/img/apple.svg" alt = "linkedin" ></a></li>
+                <li><a href="https://www.linkedin.com/in/mon-carlo-impelido-9a92b9158/"><img src="img/linkedin-logo.png" alt="linkedin" class = "linkedin"></a></li>
+                <li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=imoncarlo530@gmail.com"><img src="img/gmail-logo.png" alt="gmail" class = "gmail"></a></li>
             </ul>
         </div>
     </div>
 
-    <div class="landing-page">
+    <div class="hero">
         <div class="content">
-            <h1>Hello! I am Mon</h1>
-            <h2>a designer and a developer</h2>
-            <div class="description">
-                <p>Lorem ipsum dolor sit amet</p>
+            <h1 class="stagger1">Hello! I am Mon</h1>
+            <p>a designer and a developer</p>
+            <div class="meet stagger1">
+                <span>👇</span>
+                <p>Scroll to read more</p>
             </div>
+            <svg class="scroll stagger1" width="40" height="77" viewBox="0 0 40 77">
+                <g id="scroll" transform="translate(-253 -787)">
+                  <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(253 787)" fill="none" stroke="#fff" stroke-width="4">
+                    <rect width="40" height="77" rx="20" stroke="none"/>
+                    <rect x="2" y="2" width="36" height="73" rx="18" fill="none"/>
+                  </g>
+                  <circle class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="11" cy="11" r="11" transform="translate(262 798)" fill="#fff"/>
+                </g>
+            </svg>
         </div>
+        <a>
+            <img class = "hero-design" src= "img/person.png" alt = "front-image">
+        </a>
     </div>
 
-    <section class= "featured">
-        <div class="left">
-            <div class="inner-transitions2">
-                <p class="subtitle">featured project</p>
-                <a href="a" class = "featured-title">Movie Rent</a>
-                <p class="featured-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, ad?</p>
+    <section class="featured" id = "first">
+        <div class="left" >
+            <div class="inner transition2">
+                <p class="subtitle">Featured Project</p>
+                <p class="featured-title">Weather App</p>
+
+                <p class="featured-desc">For this project, HTML, CSS, and Javascript was used to create an app that retrieves information from the OpenWeatherMap API according to a specified location. </p>
             </div>
         </div>
-        <img class = "right-transactions2" src="website-portfolio/img/First.png" alt = "featured-project">
+        <a href = "https://mondelcastillo.github.io/javascript-projects/"><img class="right transition2" src= "img/weather-app-update.png" alt="Featured Project"></a>
+        
     </section>
-    
-    <section class = "skills">
+
+    <section class="skills" id = "second">
         <div class="skills-container">
             <ul>
-                <li class="transitions2">
+                <li class="transition2">
                     <div class="icon-container one">
-                        <img src = "website-portfolio/img/apple.svg" alt = "optum stratethon">
+                        <img src="img/visibility.png" alt="UI/UX Icon">
                     </div>
-                    <p class="competition">Optum Stratethon Finalist</p>
-                    <p class="competitionDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quam?</p>
+                    <p class="skill-title">Visual</p>
+                    <p> Graphic Design</p>
+                    <p> Illustration</p>
+                    <p> Concept Sketches</p>
+                    <p> Wireframing & Mockups</p>
+                    <!-- <p class="featured-desc skill-desc">Wireframing </p> -->
                 </li>
-                <li class="transitions2">
+                <li class="transition2">
                     <div class="icon-container two">
-                        <img src = "website-portfolio/img/apple.svg" alt = "im summit">
+                        <img src="img/laptop.png" alt="UI/UX Icon">
                     </div>
-                    <p class="competition">IM Summit Finalist</p>
-                    <p class="competitionDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quam?</p>
+                    <p class="skill-title">Software</p>
+                    <p> Adobe Illustrator</p>
+                    <p> Adobe Photoshop</p>
+                    <p>Figma</p> 
+                    <p> Spline</p>
+                    <!-- <p class="featured-desc skill-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, odit?</p> -->
                 </li>
-                <li class="transitions2">
+                <li class="transition2">
                     <div class="icon-container three">
-                        <img src = "website-portfolio/img/apple.svg" alt = "usher">
+                        <img src="img/code.png" alt="UI/UX Icon">
                     </div>
-                    <p class="competition">Usher Hackathon Champion</p>
-                    <p class="competitionDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quam?</p>
+                    <p class="skill-title">Coding</p>
+                    <p> HTML & CSS</p>
+                    <p> Javascript</p>
+                    <p> Python</p>
+                    <p> C++</p>
+                    <!-- <p class="featured-desc skill-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, odit?</p> -->
                 </li>
             </ul>
         </div>
     </section>
 
-    <section class="portfolio">
-        <div class="portfolio-container-transition3">
+    <section class="portfolio" id = "third">
+
+        <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Calculator</p>
-                    <p class="featured-title">Github.com</p>
-                    <p class="featured-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ut?</p>
+                    <p class="subtitle">C++ LANGUAGE</p>
+
+                    <p class="featured-title">Movie Rent App</p>
+                    <p class="featured-desc">This app was made in compliance to the course Data Structures and Algorithm. It is a system that was made using C++ language for an assumed video store manager. Its objective is to keep track of its list of movies, and its customers.</p>
                 </div>
             </div>
-            <a href = ""><img src = "website-portfolio/img/First.png" alt = "calculator"></a>
+            <a href="https://github.com/mondelcastillo/c-projects/tree/main/Movie-Rent-App"><img src="img/rent-app.png" alt="Fretastic"></a>
         </div>
 
-        <div class="portfolio-container-transition3">
+        <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Project</p>
-                    <p class="featured-title">Github.com</p>
-                    <p class="featured-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ut?</p>
+                    <p class="subtitle">CSS & HTML</p>
+
+                    <p class="featured-title">Recipe App</p>
+                    <p class="featured-desc">This web application uses TheMealDB API. It offers a step-by-step instructions on how to make food, and dishes. </p>
                 </div>
             </div>
-            <a href = ""><img src = "website-portfolio/img/First.png" alt = "Project"></a>
+            <a href="https://github.com/mondelcastillo/javascript-projects/tree/main/recipe-app"><img src="img/BArtboard 3.png" alt="Fretastic"></a>
         </div>
-
 
     </section>
+
+    <section class = "about-me">
+        <footer>
+            <div class="footer-content">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus distinctio a eos, natus molestiae illo minus exercitationem quaerat ad!</p>
+                <ul class = ""></ul>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+        tl.from('.content', {
+            y: '-30%',
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
+        })
+        tl.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            stagger: .3,
+            ease: Power4.easeOut,
+            duration: 2
+        }, "-=1.5")
+        tl.from('.hero-design', {
+            opacity: 0, y: 50, ease: Power4.easeOut, duration: 1
+        }, "-=2")
+
+        gsap.from(".square-anim", {
+            stagger: .2,
+            scale: 0.1,
+            duration: 1,
+            ease: Back.easeOut.config(1.7)
+        })
+
+        gsap.from(".transition2", {
+            scrollTrigger: {
+                trigger: '.transition2',
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+        })
+
+        gsap.from(".transition3", {
+            scrollTrigger: {
+                trigger: ".transition3",
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
+        });
+    </script>
 </body>
 </html>

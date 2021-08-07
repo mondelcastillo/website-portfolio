@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 body {
   height: 100vh;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', arial;
 }
 
 ul {
@@ -19,7 +20,7 @@ img {
 }
 
 .nav-container {
-  background: #6A387B;
+  background: #6700EE;
 }
 
 .nav-container a {
@@ -37,7 +38,7 @@ header {
 }
 
 header .logo {
-  color: white;
+  color: #00F7FF;
   font-weight: bold;
 }
 
@@ -45,7 +46,6 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: bold;
 }
 
 header ul a {
@@ -53,12 +53,12 @@ header ul a {
   padding: 0 1em;
 }
 
-.social-header {
+.social-header, .hero-design {
   display: none;
 }
 
-.landing-page {
-  background: #6A387B;
+.hero {
+  background: #6E00FF;
   color: white;
   display: -ms-grid;
   display: grid;
@@ -66,14 +66,24 @@ header ul a {
   padding: 4em;
 }
 
-.description {
+.meet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   width: 200px;
   font-weight: bold;
-  color: white;
+  color: #FF64CB;
+}
+
+.meet span {
+  margin-top: 1em;
+  margin-right: .5em;
+}
+
+.scroll {
+  width: 30px;
+  margin-top: 2em;
 }
 
 section {
@@ -81,18 +91,10 @@ section {
   text-align: center;
 }
 
-.featured {
-  position: relative;
-}
-
-.right-transactions2 {
-  border-radius: 8px;
-}
-
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: #6A387B;
+  color: #6E00FF;
   letter-spacing: .2em;
   font-size: .85em;
 }
@@ -105,8 +107,8 @@ section {
   display: block;
 }
 
-.featured-description {
-  color: #6A387B;
+.featured-desc {
+  color: #252525;
   margin-bottom: 3em;
   font-size: .9em;
   line-height: 1.8em;
@@ -114,7 +116,7 @@ section {
 }
 
 .skills {
-  background: #6A387B;
+  background: #FF64CB;
 }
 
 .skills-container ul li {
@@ -144,34 +146,38 @@ section {
   width: 60px;
 }
 
-.skills-container ul li .competition {
+.skills-container ul li .skill-title {
   font-weight: bold;
 }
 
-.skills-container ul li .competitionDescription {
+.skills-container ul li .featured-desc {
   margin-bottom: 2em;
 }
 
 .portfolio {
-  background: #FEBA37;
+  background: #F7F7F7;
 }
 
-.portfolio-container-transition3 a img {
-  border-radius: 1em;
+.portfolio-container a img {
+  border-radius: 0.5em;
   margin-bottom: 2em;
 }
 
+.featured img {
+  border-radius: 0.5em;
+}
+
 @media only screen and (min-width: 800px) {
-  .featured, .inner-transitions2 {
+  .featured, .portfolio {
     text-align: left;
   }
-  .featured, .portfolio-container-transition3 {
+  .featured, .portfolio-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 40% auto;
         grid-template-columns: 40% auto;
   }
-  .left, .portfolio-container-transition3 {
+  .left, .portfolio-left {
     display: -ms-grid;
     display: grid;
     place-content: center;
@@ -195,13 +201,13 @@ section {
   .portfolio {
     padding-top: 7em;
   }
-  .portfolio-container-transition3 img {
+  .portfolio-container img {
     margin-left: 2em;
   }
 }
 
 @media only screen and (min-width: 1050px) {
-  .landing-page {
+  .hero {
     height: 90vh;
   }
   .nav-container {
@@ -212,7 +218,7 @@ section {
     background: unset;
   }
   .nav-container header {
-    background: #6A387B;
+    background: #6700EE;
   }
   header {
     padding: 2em 2em 2em 4em;
@@ -234,12 +240,17 @@ section {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 7em;
-    float: right;
+    float: left;
+    padding-left: 9em;
   }
-  .social-header ul img {
-    width: 20px;
+  .social-header ul .linkedin {
+    width: 120px;
   }
-  .landing-page {
+  .social-header ul .gmail {
+    padding-left: 2em;
+    width: 2em;
+  }
+  .hero {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;
@@ -247,17 +258,24 @@ section {
     background: unset;
     padding: 0;
   }
-  .landing-page .content {
-    background: #6A387B;
+  .hero .content {
+    background: #6E00FF;
     padding: 6em 8em 6em 4em;
     text-align: left;
   }
-  .landing-page .content h1 {
+  .hero .content h1 {
     font-size: 3em;
     line-height: 1.2em;
   }
-  .description {
+  .meet {
     margin: unset;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: -100%;
+    margin-top: 3%;
+    width: 200%;
+    height: auto;
   }
   .portfolio img {
     float: right;
@@ -273,10 +291,53 @@ section {
     padding: 2em 10em 2em 0;
   }
   section {
-    padding: 10em 10em 4em 10em;
+    padding: 4em 10em 4em 10em;
   }
-  .landing-page .content {
+  .hero .content {
     padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 2em 2em 20em;
+  }
+  .social-header {
+    padding: 2em 20em 2em 0;
+  }
+  section {
+    padding: 4em 20em 4em 20em;
+  }
+  .hero .content {
+    padding: 9em 20em 6em 20em;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(262px, 798px);
+            transform: translate(262px, 798px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(262px, 830px);
+            transform: translate(262px, 830px);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(262px, 798px);
+            transform: translate(262px, 798px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(262px, 830px);
+            transform: translate(262px, 830px);
   }
 }
 /*# sourceMappingURL=main.css.map */
